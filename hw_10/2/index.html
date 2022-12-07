@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container_wrapper">
+        <form action="#" method="post">
+            <h2>Contact form</h2>
+            <p>Please fill in your information and we'll be sending your order.</p>
+            <div class="wrapper">
+
+                <!--! 1 -->
+                <div class=" container your_name">
+
+                    <div class="text texts"><span>Your name</span></div>
+
+                    <input type="text" placeholder="first name" class="first_name">
+                    <input type="text" placeholder="last name" class="last_name">
+                    
+                </div>
+
+                <!--! 2 -->
+                <div class=" container your_email"> 
+                    <div class="text_1 texts"><span>Your email</span></div>
+                    <input type="email" placeholder="your_mail@gmail.com" class="email">
+                    
+                </div>
+
+                <label for="phone1">
+                    <span>Phone *</span>
+                    <div>
+                        <input type="tel" placeholder="000" id="phone1" >
+                        <input type="tel" placeholder="000" id="phone2">
+                        <input type="tel" placeholder="0000" id="phone3">
+                    </div>
+                </label>
+                <label for="msgSubj">
+                    <span>Message subject *</span>
+                    <div>
+                        <select id="msgSubj">
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </label>
+                <label for="msg">
+                    <span>Message *</span>
+                    <div id="wrapper">
+                        <textarea id="msg" rows="6"></textarea>
+                    </div>
+                </label>
+
+
+            <br>
+                <hr>
+                    <button type="submit" class="button">Submit form</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

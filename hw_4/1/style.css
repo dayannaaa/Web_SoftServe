@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+}
+table {
+    border-spacing: 0;
+    width: 80%;
+   
+   
+}
+table td:first-child {
+    text-align: left;
+    padding-left: 30px;
+}
+tr:nth-child(odd) td:nth-child(1) {
+    background-color: #ECECEC;
+    text-align: left;
+    padding-left: 30px;
+}
+span{
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+}
+p {
+margin-top: 10px;
+}
+th {
+    font-weight: bold;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+
+    
+}
+td {
+padding: 20px;
+text-align: center;
+background-color: #DBDBDB;
+color: #000000;
+
+}
+
+th:nth-child(1) {
+    background-color: #7987AA;
+}
+
+th:nth-child(2) {
+    background-color: #4F628D;
+}
+
+th:nth-child(3) {
+    background-color: #2F4173;
+}
+
+th:nth-child(4) {
+    background-color: #162954;
+}
+
+th:nth-child(5) {
+    background-color: #071538;
+}
+
+tr:nth-child(odd) td:nth-child(2),
+tr:nth-child(odd) td:nth-child(4)
+{
+    background-color: #F3F3F3;
+
+}
+
+tr:nth-child(even) td:nth-child(2),
+tr:nth-child(even) td:nth-child(4){
+    background-color: #E7E7E7;
+}
+
+table tr:nth-child(odd) td:nth-child(3),
+table tr:nth-child(odd) td:nth-child(5) {
+    background-color: #ECECEC;
+}
+button{
+    background-color: #D3D3D3;
+    padding: 10px 25px;
+    border: 2px solid #B9B9B9;
+}
+th:first-child {
+    border-top-left-radius: 10px;
+}
+th:last-child {
+    border-top-right-radius: 10px;
+}
+tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+

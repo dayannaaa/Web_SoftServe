@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(237, 232, 216);
+    color: whitesmoke;
+}
+h2{
+    font-size: 38px;
+    text-align: center;
+}
+section{
+    margin-top: 150px;
+}
+.three_task{
+        margin-left: 18px;
+        margin-bottom: 150px;
+}
+.two_task{
+    margin-left: 150px;
+
+}
+
+
+/*? ONE*/
+.one_task ol{
+    background-color: rgb(228, 164, 164);
+    padding: 15px;
+    
+}
+.one_task li{
+    background-color: rgb(202, 112, 112);
+    padding: 15px;
+    margin: 15px;
+    list-style-position: inside;
+
+}
+.one_task span{
+    background-color: rgb(154, 32, 32);
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+/*? TWO */
+
+.one::after,.two::after, .three::after{
+    content: '❌';
+}
+.text li{
+list-style-position: inside;
+list-style-type: none;
+font-size: 20px;
+margin-right: 150px;
+color: black;
+}
+.text li.one{
+background-color: rgba(227, 130, 12, 0.8);
+}
+.text li.three{
+    background-color:rgb(246, 206, 157) ;
+}
+.text li.two {
+    background-color: rgb(236, 181, 86);
+}
+input{
+    width: 15px;
+}
+
+
+/*? THREE */
+
+.three_task{
+    color: black;
+}
+.text_grey{
+    color: grey;
+}
+.text_blue{
+    color: blue;
+}
+p, span{
+    line-height: 0.7px;
+}

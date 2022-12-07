@@ -1,0 +1,66 @@
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *::after {
+    box-sizing: inherit;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: rgb(200, 200, 200);
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+.grid-item{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,20px);
+    margin-top: 0;
+}
+.grid_woman,
+.grid_man{
+    display: grid;
+    grid-template-columns: repeat(2,100px);
+    margin-top: 7%;
+}
+.grid_woman{
+display: grid;
+justify-content: end;
+}
+.even p{
+    background-color: rgba(103, 103, 208, 0.522);
+    padding: 20px;
+    border-radius: 15px 15px 0px 15px;
+    width: 30vw;
+}
+.grid-row_2 p:not(.even p){
+    background-color: rgba(216, 112, 147, 0.667);
+    padding: 20px;
+    border-radius: 15px 15px 15px 0px;
+    width: 30vw;
+}
+.woman span{
+    display: grid;
+    justify-content: end;
+    font-size:14px;
+    color:rgba(0, 0, 0, 0.622) ;
+}
+.woman p,
+.man p{
+    margin-bottom: 0;
+}
+.woman{
+    display: grid;
+    justify-content: end;
+    align-content: center;
+}
+.man span{
+    font-size:14px;
+    color:rgba(0, 0, 0, 0.622) ;
+    display: grid;
+    justify-content: start;
+}

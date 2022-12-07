@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+html {
+  box-sizing: border-box;
+}
+*,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: aliceblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  background-image: url(../2/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form{
+    box-shadow: 4px 4px 15px rgb(0, 0, 0);
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+}
+ /*! grid start */
+.container {  display: grid;
+  grid-template-columns: 1fr 1.1fr 1.5fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "text first_name last_name"
+    "text_1 email email";
+}
+
+.text { grid-area: text;  margin-left: 20px;}
+.text_1 { grid-area: text_1;margin-left: 20px; }
+.email { grid-area: email; margin-left: -37px; }
+.last_name { grid-area: last_name; }
+.first_name { grid-area: first_name; margin-left: -37px;}
+
+ /*! grid end */
+
+form h2 {
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+form p {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+form h2, form p {
+    color: white;
+    margin-left: 20px;
+}
+
+form input, form select, form textarea {
+    margin: 10px;
+    height: 3vh;
+    border: none;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+form hr {
+    margin: 10px;
+    border: 1px solid white;
+}
+
+form select {
+    height: 4vh;
+}
+form input::placeholder {
+    font-size: larger;
+    color: rgba(160, 160, 160, 0.411);
+}
+
+form label {
+    color: white;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form label textarea {
+    height: 10vh;
+}
+
+#msgSubj, #msg, #submitBtn {
+    flex-basis: 100%;
+}
+form label div {
+    flex-basis: 80%;
+    display: flex;  
+}
+#phone1{
+  margin-left: 114px;
+}
+ button {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 25px;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: .35s;
+    cursor: pointer;
+    width: 80%;
+    float: right;
+}
+button:hover {
+  cursor: pointer;
+  animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}

@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::after {
+    box-sizing: inherit;
+  }
+  body {
+    margin: 150px;
+    padding: 0;
+    text-align: center;
+    min-height: 100vh;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    color: white;
+  
+  }

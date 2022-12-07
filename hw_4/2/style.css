@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body,
+html{
+    -webkit-font-smoothing:antialiased ;
+    -moz-osx-font-smoothing: grayscale ;
+    text-rendering: optimizeLegibility;
+    height: 100%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(55, 53, 53);
+    min-height: 100vh;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif ;
+    font-size: 1.2rem;
+}
+.container{
+    margin: 0px 100px 0 120px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+img{
+    float: left;
+    margin: 7px 20px 7px 7px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+img:hover{
+    transform: rotate(360deg)
+}
+.logo::selection,
+img::selection,
+h2::selection,
+h1::selection,
+p::selection {
+  
+    background-color: rgb(154, 144, 144);
+}
+h1{
+   
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+h1:hover{
+    transform: scale(1.5);
+}
+.logo{
+    padding: 50px 20px;
+    color: white;
+}
+.list-wrapper{
+z-index: 1;
+display: flex;
+width: 100%;
+
+}
+
+header {
+    background-color: rgba(179, 175, 175, 0.962);
+    top: 0;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    width: 100px;
+    transition: 1s; 
+}
+header:hover {
+    width: 300px;
+    transition: 1s;
+}
+.list-wrapper>ul > li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 240px;
+    display: inherit;
+}
+a:hover {
+    background-color: rgba(231, 221, 221, 0.378);
+    
+}
+.list-wrapper>ul> li  a{
+
+    display: inherit;
+    padding: 30px;
+    text-transform: uppercase;
+    padding-left:auto;
+    transition-duration: background-color 0.3s linear, box-shadow 0.3s ease;
+  
+}
+
+i{
+  padding-left: 10px;
+  padding-right: 70px;
+
+}
+
+
