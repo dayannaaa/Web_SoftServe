@@ -1,4 +1,4 @@
-let book = document.querySelector('ul');
+let list = document.querySelector('ul');
 let forms = document.querySelector('.form');
 let filterInput = document.querySelector('.filter')
 
@@ -6,16 +6,16 @@ let filterInput = document.querySelector('.filter')
 filterInput.addEventListener('keyup',(e) => {
 	let test = filterInput.value.toLowerCase();
 
-	let books = book.querySelectorAll('li');
-	books.forEach(book => {
-		let mainCheck = book.firstElementChild;
+	let lists = list.querySelectorAll('li');
+	lists.forEach(list => {
+		let mainCheck = list.firstElementChild;
 		let str = mainCheck.textContent.toLowerCase();
 		
 		if(str.indexOf(test) == -1){
-			book.style.display = 'none'
+			list.style.display = 'none'
 			return;
 		}
-		book.style.display = 'block'
+		list.style.display = 'block'
 	});
 });
 forms.addEventListener('submit',(e) => {
@@ -32,11 +32,11 @@ forms.addEventListener('submit',(e) => {
 	alreadyButton.textContent = 'delete';
 	newLi.appendChild(newParagraph);
 	newLi.appendChild(alreadyButton);
-	book.appendChild(newLi);
+	list.appendChild(newLi);
 	newBook.value = '';
 });
 
-book.addEventListener('click',(e) => {
+list.addEventListener('click',(e) => {
 	if(e.target.tagName == 'BUTTON'){
 		let li = e.target.parentNode;
 		li.parentNode.removeChild(li);
