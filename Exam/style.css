@@ -52,22 +52,46 @@ h3{
 	margin: 4% 0 0;
 	cursor: pointer;
 	position: relative;
+	font-size: 18px;
+	transition: 0.2s;
+	padding: 12px 8px 12px 40px;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
-.mainBody ul li::before{
+.mainBody ul li:hover {
+	background: rgba(221, 221, 221, 0.568);
+  }
+  .mainBody ul li.checked {
+	color: #fff;
+	text-decoration: line-through;
+  }
+  
+  .mainBody ul li.checked::before {
 	content: '';
 	position: absolute;
-	left: -5%;
-	height: 100%;
-	width: 3%;
-	background: rgba(16, 16, 2, 0.255);
-	transform-origin: right;
-	transform: scaleX(0);
-	transition: transform .1s;
-}
-.mainBody ul li:hover::before{
-	transform-origin: right;
-	transform: scaleX(1);
-}
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 2px 2px 0;
+	top: 10px;
+	left: 16px;
+	transform: rotate(45deg);
+	height: 15px;
+	width: 7px;
+  }
+  .mainBody ul li::before {
+	content: '';
+	position: absolute;
+	border-color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 0 10px 10px 0;
+	top:18px;
+	left: 16px;
+	transform: rotate(55deg);
+  }
+  
 .mainBody ul li p{
 	padding: 0 0 4px;
 	letter-spacing: .02em;
@@ -76,12 +100,13 @@ h3{
 	width: 100%;
 	padding: 10px 0;
 	text-transform: uppercase;
-	/* border: none; */
 	outline: none;
 	letter-spacing: .1em;
 	background-color: rgba(221, 221, 221, 0);
 	color: rgb(255, 251, 251);
 	border-radius: 1px solid black;
+
+
 }
 .filter{
 	width: 100%;
@@ -93,6 +118,7 @@ h3{
 button{
 	cursor: pointer;
 	transition: all .2s;
+	margin-left: -18px;
 }
 button:active{
 	transform: scale(.9);
@@ -156,3 +182,9 @@ button:hover {
   color: #b6b6b6;
   text-decoration: line-through;
 }
+
+
+
+
+
+

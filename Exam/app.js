@@ -43,3 +43,10 @@ list.addEventListener('click',(e) => {
 		li.parentNode.removeChild(li);
 	}
 });
+
+var list_2 = document.querySelector('ul');
+list_2.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
