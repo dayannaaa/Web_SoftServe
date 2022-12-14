@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *::after {
@@ -11,21 +12,10 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
-:root{
-	--color: #900d;
-	--color: teal;
-}
-*{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-}
-html{
-	scroll-behavior: smooth;
-}
+
 body{
 	background: rgba(126, 148, 170, 0.542);
 	font-family: arial;
@@ -82,11 +72,12 @@ h3{
 	width: 100%;
 	padding: 10px 0;
 	text-transform: uppercase;
-	border: none;
+	/* border: none; */
 	outline: none;
 	letter-spacing: .1em;
-	background: #f00;
-	color: #fff;
+	background-color: rgba(221, 221, 221, 0);
+	color: rgb(255, 251, 251);
+	border-radius: 1px solid black;
 }
 .filter{
 	width: 100%;

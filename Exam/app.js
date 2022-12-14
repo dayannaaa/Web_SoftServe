@@ -18,6 +18,7 @@ filterInput.addEventListener('keyup',(e) => {
 		list.style.display = 'block'
 	});
 });
+
 forms.addEventListener('submit',(e) => {
 	e.preventDefault();
 	let newBook = e.target.querySelector('input');
