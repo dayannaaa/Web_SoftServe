@@ -1,6 +1,7 @@
 let list = document.querySelector('ul');
 let forms = document.querySelector('.form');
 let filterInput = document.querySelector('.filter')
+alert("If you want to mark the task as completed, click on the diamond ");
 
 
 filterInput.addEventListener('keyup',(e) => {
